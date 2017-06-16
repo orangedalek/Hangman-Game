@@ -2,15 +2,53 @@
 <html lang="en-us">
 <head>
 	<meta charset="UTF-8">
-	<title>Hangman Game</title>
+	<title>Goth Hangman</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets.css.style.css">
-	<
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- 	<link rel="stylesheet" type="text/css" href="assets.css.style.css"> -->
+	
 </head>
 <body>
 
+<div class="jumbotron">
+	<h1>Goth Hangman</h1>
+	<p>Press any key to begin</p>
 
-<script type="text/javascript" src="asstes/javascript/game.js"></script>
+</div>
+
+
+<div  class = "panel panel-default">
+	<div class="panel-heading">Guess the word!</div>
+	<div class="panel-body" id="demo"></div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">Wrong letters guessed:</div>
+	<div class="panel-body" id="wrong"></div>
+	
+</div>
+
+<div class = "panel panel-default">
+	<div class="panel-heading">Guesses left:</div>
+	<div class="panel-body" id="guessLeft"></div>
+	
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">Wins:</div>
+	<div class="panel-body" id="wins"></div>
+	
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">Losses</div>
+	<div class="panel-body" id="losses"></div>
+	
+</div>
+
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 	
 </body>
 </html>

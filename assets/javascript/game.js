@@ -62,6 +62,8 @@ document.onkeyup = function() {
 				else if(remainingLetters === 0){
 					Alert("You win!");
 					wins++;
+					var winning = document.getElementById("wins");
+					wins.innerHTML = wins;
 					pushLetters();//should maybe be pushSpaces?? Trying to restart game.
 				}
 		}

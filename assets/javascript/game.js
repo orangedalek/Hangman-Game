@@ -28,7 +28,7 @@ function makeLines(){
 	for(var i = 0; i < word.length; i++){
 		spaces = [];
 		spaces[i]= "_";
-		paces.push(splitWord);	
+		spaces.push(splitWord);	
 	}
  	var el = document.getElementById("demo");
 	el.innerHTML = spaces.join(" ");
@@ -39,7 +39,7 @@ pushLetters();
 var remainingLetters = word.length;
 //start game when user guesses the first letter
 document.onkeyup = function() {
-		var guess = (event.key).toLowerCase();
+		var guess = (event.key).toLowerCase;
 		//while there are still letters left to guess, keep looping
 	while(guessesLeft > 0){
 		//compare user guess to letters in word
@@ -48,13 +48,14 @@ document.onkeyup = function() {
 				if(word[j]=== guess){
 					letters[j] = guess;
 					pushLetters(spaces);
-					console.log(spaces);
+					console.log(spaces + "spaces");
 					remainingLetters--;
+					//turn underscore into letter somehow
 				}
 		//else if letter guessed is not in the word, guesses left goes down by oneand letter is added to wrongLetters.
 				else if(word[j] !== guess){
 					guessesLeft--;
-					console.log(guessesLeft);
+					console.log(guessesLeft + "guessesLeft");
 					var wrng = document.getElementById("wrong");
 					wrng.innerHTML = guess;
 				}
